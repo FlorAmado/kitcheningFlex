@@ -1,28 +1,31 @@
-.home{
+/* .home{
+no se toca el home, es el body
+} */
 
-}
-
-.home__main{
+/* .home__main{
    
 }
-
+ */
 .home__main__section--banner{
     display: none;
 }
 
-.home__main__section--productos{
+.home__main__section--productos{/* padre de todos los articles */
+    display: flex;
+    flex-wrap: wrap;/* respeta el ancho de los hijos */
 
 }
 
-.home__main__section__article{
-
+.home__main__section__article{/* hijo de products */
+/* debe de tener ancho para que respete tal valor, en este caso la imagen condiciona el ancho. porque no lo tenia el articulo */
+    width: 100%;
 }
 
 .home__main__section__article--imagen{
     position: relative;
 }
 
-.home__main__section__article--imagen-product{
+.home__main__section__article--imagen-product{ /* hijo de article */
     width: 100%;
 }
 
@@ -54,7 +57,7 @@
     padding: 8px;
 }
 
-@media (min-width:426px) {
+@media (min-width: 768px/* 426px */) {
 
     .home__main__section--banner{
         display: block;
@@ -63,29 +66,33 @@
     .home__main__section--banner img{
         width: 100%;
     }
-
+    .home__main__section--productos{
+       justify-content: space-between;/* se separan los elementos, 4% de 96 al medio */
+    
+    }
     .home__main__section__article{
         width: 48%;
-        display: inline-block;
-        margin-right: 3.2%;
+       /*  display: inline-block;
+        margin-right: 3.2%; */
     }
 
-    .home__main__section__article:nth-child(even){
+    /* .home__main__section__article:nth-child(even){
         margin-right: 0%;
-    }
+    } */
 }
 
 @media (min-width:1180px) {
     .home__main__section__article{
-        width: 32%;
-        display: inline-block;
-        margin-right: 1.5%;
+        width: 32%; /*  32 +32=96, entre elemento queda 2% */
+        /* display: inline-block;
+        margin-right: 1.5%; */
     }
-
+/* 
     .home__main__section__article:nth-child(even){
         margin-right: 1.5%;
     }
     .home__main__section__article:nth-child(3n){
         margin-right: 0%;
     }
+ */
 }

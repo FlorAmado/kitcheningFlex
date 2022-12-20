@@ -7,7 +7,7 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 10px; /* hace q no este pegado a la izquierda con flex */
     background-image: url("/images/bg-body.png");
 }
 

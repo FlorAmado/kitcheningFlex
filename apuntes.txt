@@ -1,0 +1,31 @@
+eje principal es el eje x por defecto
+eje x horizontal
+eje y vertical
+
+se pueden invertir
+
+segun cual es el eje principal los hijos se comportan de cierta manera
+(hijos cajas de padres cajas)
+
+los elementos de acomodan desde izq a der 
+usando flex-direction. Row es el valor por defecto.
+
+mobile 320
+tablet 426
+desktop 1180
+
+nunca dar medidad relativas los margenes
+eje margin-left 10% (vh,vw,rem,)
+
+el padre flex se alineo en el eje principal (horizontal)
+quedan las cajas una al lado de la otra en el eje x
+
+se acomodan una al lado de la otro mientras entren las cajas en el ancho
+
+recomendado usar en el nav:
+alto/higth: vh
+ancho/width: %
+
+usando flex se debe de cambiar el eje principal x a y 
+la otra alternativa es utilizar:
+-> flex-direction: column;
