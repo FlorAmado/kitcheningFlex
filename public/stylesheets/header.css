@@ -30,7 +30,7 @@
 
 }
 
-.header__nav--menu li{
+.header__nav ul li{
     width: 100%;/* contenedor padre ul, es un display:block/elemento de bloque */
     background-color: var(--colorGris);
     text-transform: uppercase;
@@ -47,26 +47,31 @@
     /* .header__nav{
         display: flex;
     } */
-    .header__nav--menu{
+    .header__nav ul{
         display: flex;
         justify-content: space-between;
     }
-    .header__nav--menu li{
-         width: 15%; 
+    .header__nav ul{
+        display: flex;
+        gap: 10px;
+    }
+    .header__nav ul li{
+        width: 180px;
+         /* width: 15%;  */
         /* display: inline-block; */
         /* margin-bottom: 0px; */
         /*margin-right: 1.25%;*/
     }
-    /* .header__nav--menu li:last-child{
+    /* .header__nav ul li:last-child{
         margin-right: 0;
     } */
 
 }
 
 @media (min-width:1180px) {
-    .header__nav--menu li{
+   /* .header__nav ul li{
         width: 180px;
-        /* margin-bottom: 0px;
-        margin-right: 10px; */
-    }
+         margin-bottom: 0px;
+        margin-right: 10px; 
+    }*/
 }
